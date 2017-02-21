@@ -9,5 +9,10 @@ extinct_animals = {
 }
 # Elimina todos los animales que se extinguieron despues del año 1999, del hash extinct_animals. No uses metodos especiales solo delete e iteracione
 
-extinct_animals = extinct_animals.select {|key, value| value < 1999 }
-puts extinct_animals
+# extinct_animals = extinct_animals.select {|key, value| value < 1999 }
+# puts extinct_animals
+
+extinct_animals.each do |key,value|
+extinct_animals.delete(key) if value >1999
+end
+print extinct_animals

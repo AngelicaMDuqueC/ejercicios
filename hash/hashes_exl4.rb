@@ -17,4 +17,4 @@ extinct_animals = {
 
 other_animmals= ["Andean Cat" ,"Dodo",  "Tasmanian Tiger" ,  "Saiga Antelope"]
 
-other_animmals.each { |element|puts extinct_animals.has_key?(element)? "incluido #{element}" : "no incluido #{element}"   }
+other_animmals.each { |element| puts extinct_animals.has_key?(element)? "incluido #{element}" : "no incluido #{element}"   }
